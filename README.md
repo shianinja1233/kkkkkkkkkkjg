@@ -17,22 +17,22 @@ const Hook = new webhook.Webhook("WEBHOOK URL")
 
 To send an info message:
 ```js
-Hook.info("WEBHOOK NAME","Info")
+Hook.info("kurt cobain","Info")
 ```
 
 To send a warning message:
 ```js
-Hook.warn("WEBHOOK NAME", "Warning message")
+Hook.warn("kurt cobain", "olha o rock")
 ```
 
 To send an error message:
 ```js
-Hook.err("WEBHOOK NAME","Error")
+Hook.err("kurt cobain","Error")
 ```
 
 To send a success message:
 ```js
-Hook.success("WEBHOOK NAME","Yay we did something right")
+Hook.success("kurt cobain","sucesso broll")
 ```
 
 ## Custom messages
@@ -45,11 +45,11 @@ const webhook = require("webhook-discord");
 const Hook = new webhook.Webhook("WEBHOOK URL");
 
 const msg = new webhook.MessageBuilder()
-                .setName("Username")
+                .setName("kurtcobain")
                 .setColor("#aabbcc")
-                .setText("This is my webhook!")
+                .setText("rock sucesso broll!")
                 .addField("This", "is")
-                .addField("my", "webhook!")
+                .addField("my", "rock!")
                 .setImage("Image url")
                 .setTime();
 
